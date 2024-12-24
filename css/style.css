@@ -127,7 +127,7 @@ p, h6{
     justify-items: center;
 }
 .about-scrollable {
-    width: auto;
+    width: 100%;
     height: 100%;
     overflow: auto; /* Add scrollbars when content overflows */
     margin-right: .25rem;
