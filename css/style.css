@@ -1,0 +1,700 @@
+body{
+    margin: 0;
+    font-family: 'Paytone One', sans-serif;
+    background-image: url('Me.webp');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #F6F6F6;
+}
+p, h6{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Hero */
+.hero{
+    max-height: 620px;
+}
+.hero .name{
+    text-align: left;
+    font-size: 4rem;
+}
+
+/* Navigation and Content */
+
+/* Navigation */
+.nav-and-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* height: 50rem; */
+    width: 60rem;
+
+}
+.nav-items{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+.logo{
+    width: 3rem;
+    margin-bottom: 2rem;
+}
+.nav{
+    border-radius: 1rem;
+    border: 2px solid #040D12;
+    box-shadow: 0 2px 6px rgba(24, 61, 61, 0.3);
+    backdrop-filter: blur(1.5px); /* 1.5px blur radius */
+}
+.home-button{
+  transform: rotate(0deg);
+}
+.about-button, .project-button{
+    margin-bottom: 2rem;
+    
+}
+.home-button, .about-button, .project-button, .contact-button{
+  transition: 0.3s;
+  cursor: pointer;
+}
+.about-button{
+  border-radius: 1rem 1rem 0 0;
+}
+.contact-button{
+  border-radius: 0 0 1rem 1rem;
+}
+
+
+/* Content */
+.content{
+    height: 30rem;
+    width: 55rem;
+    border-radius: 1rem;
+    border: 2px solid #040D12;
+    background-color: rgba(249, 249, 249, .1); /* transparency */
+    box-shadow: 0 2px 6px rgba(24, 61, 61, 0.3);
+    backdrop-filter: blur(1.5px); /* 1.5px blur radius */
+    display: flex;
+}
+
+/* Home Float-In */
+
+
+/* Home Content */
+.home{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    display: block;
+    transition: 0.5s;
+}
+.home-content{
+    text-align: right;
+    padding-right: 13rem;
+    padding-top: 5rem;
+}
+
+.btn-cv{
+    background-color: #183D3D;
+    color: #F6F6F6;
+    padding: 18px;
+    border-radius: .25rem;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn-cv:hover{
+    background-color: #040D12;
+    color: #F6F6F6;
+}
+
+
+/* About Contents */
+.hi{
+    color: #183D3D;
+}
+.about{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    display: none;
+    justify-items: center;
+}
+.about-scrollable {
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Add scrollbars when content overflows */
+    margin-right: .25rem;
+  }
+  /* Style the scrollbar track */
+.about-scrollable::-webkit-scrollbar {
+    width: 10px; /* Width of vertical scrollbar */
+    border-radius: 80%;
+  }
+
+  /* Style the scrollbar thumb */
+.about-scrollable::-webkit-scrollbar-thumb {
+    background-color: #040D12; /* Color of scrollbar thumb */
+    border: 1px solid #183D3D;
+    border-radius: 50%; /* Rounded corners of thumb */
+    transition: 0.3s;
+  }
+
+  /* Change thumb color on hover */
+.about-scrollable::-webkit-scrollbar-thumb:hover {
+    background-color: #183D3D;
+  }
+  
+.about-text{
+    text-align: right;
+    padding: 5rem 13rem 5rem 0;
+}
+
+/* Carousel Name-Portraits */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    animation: slide 30s infinite; /* Animation duration */
+  }
+  
+  .carousel-slide {
+    flex: 0 0 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  @keyframes slide {
+    0%, 100%{
+        transform: translate(0);
+    }
+    16.66%, 21.66% {
+      transform: translateX(-100%);
+    }
+    33.33%, 38.33% {
+      transform: translateX(-200%);
+    }
+    50%, 55% {
+      transform: translateX(-300%);
+    }
+    66.66%, 73.66% {
+      transform: translateX(-400%);
+    }
+    83.33%, 88.33% {
+      transform: translateX(-500%);
+    }
+  }
+  
+  .carousel-slide img{
+    width: 200px; 
+    height: 300px; /* Fixed height for all images at 220px*/
+    object-fit:contain; /* Maintain aspect ratio and contain the container */
+    border-radius: .5rem;
+  }
+  
+
+  /* Project Section */
+.project{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    display: none;
+}
+.project-scrollable {
+  width: auto;
+  height: 100%;
+  overflow: auto; /* Add scrollbars when content overflows */
+  margin-right: .25rem;
+}
+/* Style the scrollbar track */
+.project-scrollable::-webkit-scrollbar {
+  width: 10px; /* Width of vertical scrollbar */
+  border-radius: 80%;
+}
+
+/* Style the scrollbar thumb */
+.project-scrollable::-webkit-scrollbar-thumb {
+  background-color: #040D12; /* Color of scrollbar thumb */
+  border: 1px solid #183D3D;
+  border-radius: 50%; /* Rounded corners of thumb */
+}
+
+/* Change thumb color on hover */
+.project-scrollable::-webkit-scrollbar-thumb:hover {
+  background-color: #183D3D;
+}
+
+/* Tech Skills Icons */
+.tech-skills-icons{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.grid-icons{
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 number of columns */
+  grid-template-rows: repeat(7, 1fr); /* 7 number of rows */
+  gap: 1rem; /* The gap between columns */
+
+}
+.grid-icons img{
+  width: 3rem;
+  transition: 0.3s;
+}
+.grid-icons img:hover{
+  width: 2.5rem;
+  cursor: pointer;
+}
+.python, .c, .canva, .django, .html, .css, .bootstrap, .photoshop, .premiere, .keap, .wordpress, .helpscout{
+  background-color: #183D3D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.python, .html, .wordpress{
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.c, .canva, .keap, .helpscout{
+  grid-column: span 2;
+}
+
+.javascript, .bootstrap{
+  background-color: #183D3D;
+}
+
+.css{
+  grid-row: span 2;
+}
+
+.photoshop, .premiere{
+  grid-column: span 2;
+}
+
+/* projects Container  */
+.projects-container{
+  padding: 15rem 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.AutoTrashBin, .TradeRide, .R-F, .HC, .Shore, .Ngutana, .Image-Viewer, .Sawa-Sawa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20rem;
+}
+
+/* AutoTrashBin */
+.AutoTrashBin-Video video{
+  width: 30rem;
+  border-radius: .25rem;
+
+}
+.AutoTrashBin-Text{
+  width: 30rem;
+  text-align: center;
+
+}
+
+/* TradeRide */
+.TradeRide-carousel {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.TradeRide-carousel img {
+  max-width: 100%;
+  display: block;
+}
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+.TradeRide-Text{
+  width: 30rem;
+  text-align: center;
+}
+
+/* Rain and Flood Alarm */
+.R-F-Video video{
+  height: 20rem;
+  width: 30rem;
+  border-radius: .25rem;
+}
+.R-F-Text{
+  width: 30rem;
+  text-align: center;
+}
+
+/* HC and Shore Landing Page Design View Buttons */
+.view-button{
+  border: 1px solid #183D3D;
+  border-radius: .25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #040D12;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.view-button:hover{
+  background-color: rgba(24, 61, 61, 0.8);
+  color: #F6F6F6;
+}
+
+/* HC Landing Page */
+.HC-Logo img{
+  width: 10rem;
+  border-radius: .25rem;
+}
+.HC-Text{
+  width: 30rem;
+  text-align: center;
+}
+.HC-Text p{
+  margin-bottom: 2rem;
+}
+/* Shore Landing Page */
+.Shore-Logo img{
+  width: 10rem;
+  border-radius: .25rem;
+  background-color: #22746b;
+}
+.Shore-Text{
+  width: 30rem;
+  text-align: center;
+}
+.Shore-Text p{
+  margin-bottom: 2rem;
+}
+/* Ngutana */
+.Ngutana-Image img{
+  width: 30rem;
+  border-radius: .25rem;
+}
+.Ngutana-Text{
+  width: 30rem;
+  text-align: center;
+}
+/* Image Viewer */
+.Image-Viewer-Image img{
+  height: 15rem;
+  width: 15rem;
+  border-radius: .25rem;
+}
+.Image-Viewer-Text{
+  width: 30rem;
+  text-align: center;
+}
+/* Snake GaMe */
+.Sawa-Sawa-Image img{
+  height: 15rem;
+  width: 15rem;
+  border-radius: .25rem;
+}
+.Sawa-Sawa-Text{
+  width: 30rem;
+  text-align: center;
+}
+
+
+/* Grid for Digital Arts */
+.digital-arts{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.grid-digital-arts{
+  width: 80%;
+  height: 100%;
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 number of columns */
+  grid-template-rows: repeat(6, 1fr);
+}
+.grid-digital-arts img{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.grid-digital-arts img:hover{
+  object-fit: contain;
+}
+.angel, .bora, .deluna, .dimention, .glow, .seascape-seashell{
+  background-color: #183D3D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.angel{
+  grid-row: span 2;
+}
+.bora{
+  grid-row: span 2;
+  grid-column: span 3;
+}
+.deluna{
+  grid-row: span 3;
+  grid-column: span 2;
+}
+.dimention{
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.glow{
+  grid-column: span 2;
+}
+.seascape-seashell{
+  grid-row: span 4;
+  grid-column: span 4;
+}
+
+/* Contact Section */
+.contact{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.contact-credit{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.media{
+  padding-right: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.media-icon{
+  width: 3rem;
+  margin-bottom: 2.25rem;
+  color: #040D12;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+
+}
+/* Social Media Icons when Hovering */
+.media-icon:hover{
+  color: #183D3D;
+}
+
+
+/* Message Me Section */
+.message-me{
+  width: 60%;
+}
+textarea{
+  outline: none;
+  border: none;
+  border-radius: .25rem;
+  border-bottom: 0.2rem solid #183D3D;
+  background-color: rgba(24, 61, 61, .1); /* transparency */
+  backdrop-filter: blur(5px); /* 5px blur radius */
+
+}
+input[type="text"] {
+  background-color: rgba(24, 61, 61, .1); /* transparency */
+  backdrop-filter: blur(5px); /* 5px blur radius */
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: .25rem;
+  border-bottom: 0.2rem solid #183D3D;
+}
+.submit-button{
+  border: none;
+  text-align: start;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50px;
+  background-color: rgba(24, 61, 61, .1); /* transparency */
+  backdrop-filter: blur(5px); /* 5px blur radius */
+  text-decoration: none;
+}
+.paper-plane-icon{
+  width: 4.5rem;
+  color: #183D3D;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.paper-plane-icon:hover{
+  width: 4.5rem;
+  color: #040D12;
+}
+
+/* Credit */
+.credit{
+  text-align: center;
+}
+
+
+/* Media query for tablets */
+@media (max-width: 1023px) {
+  /* Responsive styles for tablets */
+  body{
+    font-size: 13px;
+  }
+  h1{
+    font-size: 1rem;
+  }
+  h3{
+    font-size: 14px;
+  }
+
+  /* For this Hero Field */
+  .hero{
+    padding-top: 11rem;
+  }
+
+
+  /* Name */
+  .hero .name{
+    margin-left: 1rem;
+    color: #183D3D;
+  }
+
+  /* For both Nav and Content */
+  .nav-and-content{
+    flex-direction: column;
+    height: 420px;
+    width: 500px;
+  }
+
+  /* Nav items */
+  .nav-items{
+    height: 45px;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .about-button, .project-button, .contact-button{
+    border-radius: 1px;
+  }
+  .home-button{
+    margin: 0 2rem;
+  }
+  .about-button{
+    margin-left: 2rem;
+  }
+  .contact-button{
+    margin-right: 2rem;
+  }
+  .home-content{
+    text-align: center;
+    padding: 5rem;
+  }
+
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #F6F6F6;
+  }
+  .about-button, .project-button{
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+
+  /* Resizing of the Contents */
+  .content{
+    height: 455px;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    background: #F6F6F6;
+  }
+  .AutoTrashBin-Text, .R-F-Text, .HC-Text, .Shore-Text, .Ngutana-Text, .Image-Viewer-Text, .Sawa-Sawa-Text{
+    width: 20rem;
+  }
+  .AutoTrashBin-Video video, .R-F-Video video{
+    width: 22rem;
+  }
+  .about-text{
+    text-align: center;
+    padding: 5rem;
+  }
+  .Ngutana-Image img{
+    width: 23rem;
+  }
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+
+  /* Responsive styles for mobile devices */
+
+  /* Name */
+  .hero .name{
+    font-size: 2rem;
+  }
+
+  /* For both Nav and Content */
+  .nav-and-content{
+    flex-direction: column;
+    height: 224px;
+    width: 400px;
+  }
+ 
+}
